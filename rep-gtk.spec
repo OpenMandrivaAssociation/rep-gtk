@@ -9,7 +9,7 @@ Group:		Development/GNOME and GTK+
 BuildRequires:	libglade2.0-devel 
 URL:		http://rep-gtk.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/rep-gtk/%{name}-%{version}.tar.bz2
-Patch:		rep-gtk-0.18-gtk2.4.const.patch.bz2
+Patch:		rep-gtk-0.18-gtk2.4.const.patch
 Requires:	librep >= %{librepver}
 BuildRequires:  librep-devel >= %{librepver}
 BuildPreReq:	libgnomeui2-devel
