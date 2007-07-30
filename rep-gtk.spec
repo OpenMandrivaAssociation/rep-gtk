@@ -12,8 +12,8 @@ Source0:	http://prdownloads.sourceforge.net/rep-gtk/%{name}-%{version}.tar.bz2
 Patch:		rep-gtk-0.18-gtk2.4.const.patch
 Requires:	librep >= %{librepver}
 BuildRequires:  librep-devel >= %{librepver}
-BuildRequires: libgcrypt-devel
-BuildPreReq:	libgnomeui2-devel
+BuildRequires:  libgcrypt-devel
+BuildRequires:	libgnomeui2-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 
