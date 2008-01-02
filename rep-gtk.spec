@@ -14,6 +14,7 @@ Requires:	librep >= %{librepver}
 BuildRequires:  librep-devel >= %{librepver}
 BuildRequires:  libgcrypt-devel
 BuildRequires:	libgnomeui2-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 
 %description
