@@ -30,7 +30,7 @@ Group:		Development/GNOME and GTK+
 Requires:	%{name} = %{version}
 
 %description libglade
-This is a binding of libglade for the librep Lisp interpreter.  libglade allows 
+This is a binding of libglade for the librep Lisp interpreter.  libglade allows
 applications to dynamically load XML descriptions of GTK+ widget hierarchies. 
 These hierarchies may be created by the GLADE GUI builder.
 
