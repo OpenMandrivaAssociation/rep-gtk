@@ -3,7 +3,7 @@
 Name:		rep-gtk
 Summary:	GTK+ binding for librep Lisp environment
 Version:	0.18
-Release: %mkrel 7
+Release: %mkrel 8
 License:	GPL
 Group:		Development/GNOME and GTK+
 BuildRequires:	libglade2.0-devel 
