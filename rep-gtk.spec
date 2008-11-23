@@ -2,14 +2,13 @@
 
 Name:		rep-gtk
 Summary:	GTK+ binding for librep Lisp environment
-Version:	0.18
-Release: %mkrel 11
-License:	GPL
+Version:	0.18.3
+Release: %mkrel 1
+License:	GPLv2+
 Group:		Development/GNOME and GTK+
 BuildRequires:	libglade2.0-devel 
 URL:		http://rep-gtk.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/rep-gtk/%{name}-%{version}.tar.bz2
-Patch:		rep-gtk-0.18-gtk2.4.const.patch
 Requires:	librep >= %{librepver}
 BuildRequires:  librep-devel >= %{librepver}
 BuildRequires:  libgcrypt-devel
@@ -49,7 +48,6 @@ of libglade.
 
 %prep
 %setup -q
-%patch -p1
 
 %build
 
@@ -60,9 +58,8 @@ make host_type=%{_target_platform}
 %install
 [ -n "%{buildroot}" -a "%{buildroot}" != / ] && rm -rf %{buildroot}
 
-make install \
-  host_type=%{_target_platform} \
-  installdir=%{buildroot}%{_libexecdir}/rep/%{_target_platform}
+%makeinstall_std host_type=%{_target_platform}
+rm -rf  %buildroot%_datadir/doc/rep-gtk-*
 
 
 %clean
@@ -79,11 +76,12 @@ make install \
 
 %files
 %defattr (-,root,root,0755)
-%doc README README.guile-gtk ChangeLog gtk.defs gdk.defs BUGS
+%doc README README.guile-gtk ChangeLog gtk.defs gdk.defs BUGS examples
 %dir  %{_libexecdir}/rep/%{_target_platform}/gui
 %dir %{_libexecdir}/rep/%{_target_platform}/gui/gtk-2
 %{_libexecdir}/rep/%{_target_platform}/gui/gtk-2/gtk.*
 %{_libexecdir}/rep/%{_target_platform}/gui/gtk-2/types.*
+%_libdir/pkgconfig/rep-gtk.pc
 
 %files libglade
 %defattr (-,root,root,0755)
