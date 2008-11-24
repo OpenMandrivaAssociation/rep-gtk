@@ -61,6 +61,9 @@ make host_type=%{_target_platform}
 %makeinstall_std host_type=%{_target_platform}
 rm -rf  %buildroot%_datadir/doc/rep-gtk-*
 
+%if %_lib != lib
+mv %buildroot%_prefix/lib/pkgconfig %buildroot%_libdir
+%endif
 
 %clean
 [ -n "%{buildroot}" -a "%{buildroot}" != / ] && rm -rf %{buildroot}
