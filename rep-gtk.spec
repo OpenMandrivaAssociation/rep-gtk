@@ -1,8 +1,8 @@
-%define librepver 0.16.1
+%define librepver 0.17.3
 
 Name:		rep-gtk
 Summary:	GTK+ binding for librep Lisp environment
-Version:	0.18.3
+Version:	0.18.4
 Release: %mkrel 1
 License:	GPLv2+
 Group:		Development/GNOME and GTK+
