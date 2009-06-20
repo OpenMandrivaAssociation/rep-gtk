@@ -2,7 +2,7 @@
 
 Name:		rep-gtk
 Summary:	GTK+ binding for librep Lisp environment
-Version:	0.18.5
+Version:	0.18.6
 Release: %mkrel 1
 License:	GPLv2+
 Group:		Development/GNOME and GTK+
@@ -26,6 +26,7 @@ with a new glue-code generator.
 
 %prep
 %setup -q
+[ -x configure ] || ./autogen.sh
 
 %build
 
