@@ -22,7 +22,7 @@ with a new glue-code generator.
 
 %package devel
 Summary: C headers for %name
-Group: Development/C#
+Group: Development/C
 Requires: %name = %version-%release
 
 %description devel
