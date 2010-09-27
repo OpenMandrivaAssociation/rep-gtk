@@ -2,7 +2,7 @@
 
 Name:		rep-gtk
 Summary:	GTK+ binding for librep Lisp environment
-Version:	0.90.3
+Version:	0.90.4
 Release: %mkrel 1
 License:	GPLv2+
 Group:		Development/GNOME and GTK+
@@ -62,7 +62,7 @@ rm -rf  %buildroot%_datadir/doc/rep-gtk-*
 
 %files
 %defattr (-,root,root,0755)
-%doc README README.guile-gtk gtk.defs gdk.defs BUGS examples
+%doc README README.guile-gtk gtk.defs gdk.defs examples
 %dir  %{_libexecdir}/rep/%{_target_platform}/gui
 %dir %{_libexecdir}/rep/%{_target_platform}/gui/gtk-2
 %{_libexecdir}/rep/%{_target_platform}/gui/gtk-2/gtk.*
