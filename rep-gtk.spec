@@ -2,7 +2,7 @@
 
 Name:		rep-gtk
 Summary:	GTK+ binding for librep Lisp environment
-Version:	0.90.6
+Version:	0.90.7
 Release: %mkrel 1
 License:	GPLv2+
 Group:		Development/GNOME and GTK+
@@ -11,6 +11,7 @@ Source0:	http://download.tuxfamily.org/librep/rep-gtk/%{name}-%{version}.tar.xz
 Requires:	librep >= %{librepver}
 BuildRequires:  librep-devel >= %{librepver}
 BuildRequires:  gtk+2-devel
+BuildRequires:  libgdk_pixbuf2.0-devel >= 2.24
 BuildRequires:  libgcrypt-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
