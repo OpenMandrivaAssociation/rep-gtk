@@ -3,7 +3,7 @@
 Name:		rep-gtk
 Summary:	GTK+ binding for librep Lisp environment
 Version:	0.90.8
-Release: %mkrel 1
+Release: 2
 License:	GPLv2+
 Group:		Development/GNOME and GTK+
 URL:		http://rep-gtk.sourceforge.net/
@@ -13,7 +13,6 @@ BuildRequires:  pkgconfig(librep) >= %{librepver}
 BuildRequires:  gtk+2-devel
 BuildRequires:  libgdk_pixbuf2.0-devel >= 2.24
 BuildRequires:  pkgconfig(libgcrypt)
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 
 %description
