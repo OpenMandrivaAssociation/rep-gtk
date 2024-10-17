@@ -6,7 +6,7 @@ Version:	0.90.8
 Release:    4
 License:	GPLv2+
 Group:		Development/GNOME and GTK+
-URL:		http://rep-gtk.sourceforge.net/
+URL:		https://rep-gtk.sourceforge.net/
 Source0:	http://download.tuxfamily.org/librep/rep-gtk/%{name}-%{version}.tar.xz
 Requires:	librep >= %{librepver}
 BuildRequires:  pkgconfig(librep) >= %{librepver}
