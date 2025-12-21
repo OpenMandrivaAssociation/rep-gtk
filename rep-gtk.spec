@@ -9,6 +9,11 @@ Group:		Development/GNOME and GTK+
 URL:		https://rep-gtk.sourceforge.net/
 Source0:	http://download.tuxfamily.org/librep/rep-gtk/%{name}-%{version}.tar.xz
 Requires:	librep >= %{librepver}
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  pkgconfig(librep) >= %{librepver}
 BuildRequires:  pkgconfig(gtk+-2.0)
 BuildRequires:  libgdk_pixbuf2.0-devel >= 2.24
